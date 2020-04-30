@@ -1,0 +1,172 @@
+/********** CUSTOM FONTS **********/
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700|Open+Sans:400,600&display=swap");
+:root {
+   --my-blue: rgb(34, 129, 218);
+   --darkGrey: #232323;
+   background-color: var(--darkGrey);
+}
+
+* {
+   margin: 0 0;
+   font-family: "Nunito Sans", "Open Sans", Arial, sans-serif;
+}
+
+.flex-container {
+   opacity: 0;
+   -webkit-animation: fade-in 500ms ease-out 100ms;
+   animation: fade-in 500ms ease-out 100ms;
+   -webkit-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   max-width: 600px;
+   margin: 0 auto;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+}
+
+/* This animation is for the fade-in on the 
+entire page's elements when it is first loaded */
+@-webkit-keyframes fade-in {
+   100% {
+      opacity: 1;
+   }
+}
+@keyframes fade-in {
+   100% {
+      opacity: 1;
+   }
+}
+
+/********** HEADER **********/
+header {
+   background-color: var(--my-blue);
+   -webkit-transition: background-color 200ms ease-out;
+   transition: background-color 200ms ease-out;
+}
+
+header h1 {
+   letter-spacing: 2px;
+   text-align: center;
+   font-size: 2.5rem;
+   font-weight: 300;
+   padding: 5px 0;
+   color: white;
+}
+
+header h1 .rgbString {
+   font-size: 3.5rem;
+   font-weight: 400;
+   display: block;
+}
+
+/********** MIDBAR **********/
+.midbar {
+   height: 30px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   padding: 0px 0;
+   margin-bottom: 15px;
+   background-color: white;
+}
+
+.midbar .flex-container {
+   width: 530px;
+   -webkit-box-pack: end;
+   -ms-flex-pack: end;
+   justify-content: flex-end;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   height: 30px;
+}
+
+.midbar .info {
+   -webkit-transition: opacity 200ms ease-out;
+   transition: opacity 200ms ease-out;
+   opacity: 1;
+   padding: 4px 5px;
+   margin-right: auto;
+}
+
+.btn {
+   -webkit-transition: background-color 200ms ease-out, color 200ms ease-out;
+   transition: background-color 200ms ease-out, color 200ms ease-out;
+   padding: 4px 5px;
+   margin-right: 5px;
+   height: 1.375rem;
+   color: var(--my-blue);
+   font-size: 1em;
+   font-weight: 700;
+   border: 0px;
+   background-color: white;
+}
+
+.btn.newColors {
+   margin-right: auto;
+}
+
+.btn:hover,
+.btn.selected {
+   cursor: pointer;
+   color: white;
+   background-color: var(--my-blue);
+}
+
+/********** BODY **********/
+.square {
+   opacity: 0;
+   width: 30%;
+   padding-bottom: 30%;
+   border-radius: 15%;
+   margin: 1.66%;
+   -webkit-transition: opacity 200ms ease-out, background-color 200ms ease-out;
+   transition: opacity 200ms ease-out, background-color 200ms ease-out;
+}
+
+.square:not(.clicked),
+.square.square-visible {
+   opacity: 1 !important;
+}
+
+.square.clicked:not(.answer),
+.square:not(.square-visible) {
+   opacity: 0;
+}
+
+/********** MEDIA QUERIES **********/
+@media (max-width: 649px) {
+   header .flex-container {
+      margin: 0 1%;
+   }
+   .flex-container {
+      margin: 0 8%;
+   }
+   .info {
+      font-size: 0.8em;
+   }
+   h1 {
+      letter-spacing: 2px;
+      font-size: 2.2rem;
+   }
+   .rgbString {
+      font-size: 2.8rem;
+   }
+}
+
+@media (max-width: 510px) {
+   .info {
+      font-size: 0.6em;
+   }
+   h1 {
+      font-size: 2rem;
+   }
+   .rgbString {
+      font-size: 2.4rem;
+   }
+}
