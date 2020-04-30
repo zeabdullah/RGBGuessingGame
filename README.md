@@ -5,7 +5,7 @@ Brush up your color mixing knowledge with this little RGB guessing game.
 
 ## How It works
 
-The game has two difficulties, `EASY` and `HARD`
+To start, choose one of the game's two difficulties, `EASY` or `HARD`.
 * Clicking `EASY` will show *3* different squares on the screen. 
 * Clicking `HARD` will show *6* instead.
 
