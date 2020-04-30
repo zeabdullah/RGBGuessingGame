@@ -3,7 +3,7 @@
 Brush up your color mixing knowledge with this little RGB guessing game.
 [Play Now!](https://rgbguess-game.netlify.app/)
 
-## How it works
+## How It works
 
 The game has two difficulties, `EASY` and `HARD`
 * Clicking `EASY` will show *3* different squares on the screen. 
