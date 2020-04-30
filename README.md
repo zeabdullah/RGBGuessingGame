@@ -29,3 +29,6 @@ Try and mix colors yourself at https://rgbcolorcode.com/
 
 * Assume the header shows you following string: `RGB(20, 43, 184)`.
 We can tell that the `R` and `G` intensities compared to `B` are pretty low, which makes it safe to assume that the blue color will be predominant and the square we're looking for should have a similar color to this => 🔵
+
+#### In case you're wondering, yes. This is based off Colt Steele's Web Dev Course.
+Yes it's almost identical, I just coded it my own way instead of coding along with him.
