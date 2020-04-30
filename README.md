@@ -1,12 +1,7 @@
 # The Great RGB Guessing Game
 
 Brush up your color mixing knowledge with this little RGB guessing game.
-
-
-
-## Getting Started
-
-Simply download the zip file and open `colorgame.html`.
+[Play Now!](https://rgbguess-game.netlify.app/)
 
 ## How it works
 
