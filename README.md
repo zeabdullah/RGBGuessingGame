@@ -1,7 +1,8 @@
 # The Great RGB Guessing Game
 
 Brush up your color mixing knowledge with this little RGB guessing game.
-[Play Now!](https://rgbguess-game.netlify.app/)
+
+## [Play Now!](https://rgbguess-game.netlify.app/)
 
 ## How It works
 
